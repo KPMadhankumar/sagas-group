@@ -72,7 +72,7 @@
             <h1>Discover the epitome of Modern living at Sai Sagas Adyar</h1>
             <div>
 
-              <button type="button" class="btn btn-style-2" onclick="window.location.href='#completed-projects'" >View details</button>
+              <button type="button" class="btn btn-style-2" onclick="window.location.href='#completed-projects'">View details</button>
               <button type="button" onclick="window.location.href='#contact'" class="btn btn-style-1">Get a quote</button>
 
             </div>
@@ -84,7 +84,7 @@
             <h1>Discover the epitome of Modern living at Sai Sagas Adyar</h1>
             <div>
 
-              <button type="button" class="btn btn-style-2" onclick="window.location.href='#completed-projects'" >View details</button>
+              <button type="button" class="btn btn-style-2" onclick="window.location.href='#completed-projects'">View details</button>
               <button type="button" onclick="window.location.href='#contact'" class="btn btn-style-1">Get a quote</button>
 
             </div>
@@ -111,7 +111,7 @@
             <h1>Discover the epitome of Modern living at Sai Sagas Adyar</h1>
             <div>
 
-              <button type="button" class="btn btn-style-2" onclick="window.location.href='#completed-projects'" >View details</button>
+              <button type="button" class="btn btn-style-2" onclick="window.location.href='#completed-projects'">View details</button>
               <button type="button" class="btn btn-style-1" onclick="window.location.href='#contact'">Get a quote</button>
 
             </div>
@@ -123,7 +123,7 @@
             <h1>Discover the epitome of Modern living at Sai Sagas Adyar</h1>
             <div>
 
-              <button type="button" class="btn btn-style-2" onclick="window.location.href='#completed-projects'" >View details</button>
+              <button type="button" class="btn btn-style-2" onclick="window.location.href='#completed-projects'">View details</button>
               <button type="button" class="btn btn-style-1" onclick="window.location.href='#contact'">Get a quote</button>
 
             </div>
@@ -238,14 +238,13 @@
           </div>
 
           <div class="section-two-buttons">
-            <button class="section-two-details-btn" onclick="window.location.href='#completed-projects'"  >View Details</button>
+            <button class="section-two-details-btn" onclick="window.location.href='#completed-projects'">View Details</button>
             <button onclick="window.location.href='#contact'" class="section-two-quote-btn">Get Quote Now</button>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Completed Projects Section -->
     <!-- Completed Projects Section -->
     <section class="section-third-section" id="completed-projects">
       <div class="container pb-3">
@@ -447,7 +446,7 @@
             <p class="footer-com-text-2">© 2024 Sagas Group. All Rights Reserved.</p>
           </div>
           <div class="col-md-6">
-            <p class="footer-com-text" >Designed by <a href="#">Dream Effects Multimedia</a></p>
+            <p class="footer-com-text">Designed by <a href="#">Dream Effects Multimedia</a></p>
           </div>
         </div>
       </div>
@@ -511,7 +510,7 @@
         autoplay: true,
         autoplayTimeout: 2000,
         nav: true,
-        navText:false
+        navText: false
       });
     });
   </script>
@@ -574,50 +573,7 @@
       });
     });
   </script>
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      let index = 0;
-      const images = document.querySelectorAll(".carousel-container img");
-      const totalImages = images.length;
-      const container = document.querySelector(".carousel-container");
-
-      function showSlide(i) {
-        if (i >= totalImages) index = 0;
-        if (i < 0) index = totalImages - 1;
-        container.style.transform = `translateX(-${index * 100}%)`;
-      }
-
-      document.querySelector(".section-two-next-btn").addEventListener("click", function () {
-        index++;
-        showSlide(index);
-      });
-
-      document.querySelector(".section-two-prev-btn").addEventListener("click", function () {
-        index--;
-        showSlide(index);
-      });
-
-      // Auto-slide every 4 seconds
-      setInterval(() => {
-        index++;
-        showSlide(index);
-      }, 4000);
-    });
-  </script>
-    <script>
-      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-          e.preventDefault();
-          const targetElement = document.querySelector(this.getAttribute('href'));
-          const offset = document.querySelector('.navbar').offsetHeight; // Adjust as necessary
-  
-          window.scrollTo({
-            top: targetElement.offsetTop - offset,
-            behavior: 'smooth'
-          });
-        });
-      });
-    </script>
+ 
 </body>
 
 </html>
