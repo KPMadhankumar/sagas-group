@@ -203,13 +203,10 @@
 
 
         <div class="section-two-image-wrapper">
-          <div class="carousel-container">
+          <div class="building-carousel owl-carousel">
             <img src="assets/img/building-2.png" alt="Sai Sagas Adyar">
             <img src="assets/img/project-2.webp" alt="Sai Sagas Velachery">
-
           </div>
-          <button class="section-two-prev-btn">&#10094;</button>
-          <button class="section-two-next-btn">&#10095;</button>
         </div>
         <div class="section-two-content">
           <h6 class="section-one-title">Ongoing Project</h6>
@@ -267,23 +264,23 @@
         <div class="section-third-carousel owl-carousel ">
           <div class="section-third-item ">
             <img src="assets/img/completed-project-1.png" alt="Sagas Venus Point">
-            <h3>Sagas Venus Point</h3>
-            <a href="#">View Details</a>
+            <h3 class="text-al-st">Sagas Venus Point</h3>
+            <a class="text-al-st" href="#">View Details</a>
           </div>
           <div class="section-third-item">
             <img src="assets/img/completed-project-2.png" alt="Sagas Belle Rive">
-            <h3>Sagas Belle Rive</h3>
-            <a href="#">View Details</a>
+            <h3 class="text-al-st">Sagas Belle Rive</h3>
+            <a class="text-al-st" href="#">View Details</a>
           </div>
           <div class="section-third-item">
             <img src="assets/img/completed-project-3.png" alt="Sagas Vaibav Enclave">
-            <h3>Sagas Vaibav Enclave</h3>
-            <a href="#">View Details</a>
+            <h3 class="text-al-st" class="text-start">Sagas Vaibav Enclave</h3>
+            <a class="text-al-st" href="#">View Details</a>
           </div>
           <div class="section-third-item">
             <img src="assets/img/completed-project-4.png" alt="Sagas Coral Springs">
-            <h3>Sagas Coral Springs</h3>
-            <a href="#">View Details</a>
+            <h3 class="text-al-st">Sagas Coral Springs</h3>
+            <a class="text-al-st" href="#">View Details</a>
           </div>
         </div>
 
@@ -373,7 +370,7 @@
                   </div>
                   <div class="col-md-6">
                     <select class="form-control" id="project" required>
-                      <option value="">Select Project *</option>
+                      <option value="" disabled selected>Select Project *</option>
                       <option value="Project 1">Project 1</option>
                       <option value="Project 2">Project 2</option>
                     </select>
@@ -396,7 +393,7 @@
           <!-- Address -->
           <div class="col-lg-3 col-md-6">
             <h5 class="fw-bold">Address</h5>
-            <p><strong><i class="fa fa-map-marker" aria-hidden="true"></i>
+            <p class="icon-fixed-p"><i class="fa fa-map-marker" aria-hidden="true"></i><strong>
                 Sagas Groups</strong><br>
               3C III Street, Dr. B. N. Road,<br>
               T.Nagar, Chennai – 600 017.</p>
@@ -412,14 +409,14 @@
           <!-- Contact Us -->
           <div class="col-lg-3 col-md-6">
             <h5 class="fw-bold">Contact Us</h5>
-            <p><i class="fa fa-phone" aria-hidden="true"></i> +91 72999 10001, +91 72999 10007,<br> +91 72999 10004</p>
+            <p class="icon-fixed-p"><i class="fa fa-phone " aria-hidden="true"></i> <a href="tel:+91 72999 10001">+91 72999 10001</a>, <br> <a href="tel:+91 72999 10007">+91 72999 10007</a>,<br> <a href="tel:+91 72999 10004">+91 72999 10004</a></p>
 
-            <p><i class="fa-solid fa-envelope"></i> <a href="mailto:info@sagasgroup.com">info@sagasgroup.com, <a href="mailto:sagasconstructions@gmail.com">sagasconstructions@gmail.com</a></a></p>
+            <p class="icon-fixed-p"><i class="fa-solid fa-envelope"></i> <a href="mailto:info@sagasgroup.com">info@sagasgroup.com, <a href="mailto:sagasconstructions@gmail.com">sagasconstructions@gmail.com</a></a></p>
             <p></p>
           </div>
 
           <!-- Quick Links -->
-          <div class="col-lg-3 col-md-6">
+          <div class="col-lg-2 col-md-6">
             <h5 class="fw-bold">Quick Links</h5>
             <ul class="list-unstyled">
               <li class="pb-2"><a href="#about-us">&#10148;</i>
@@ -435,7 +432,7 @@
           </div>
 
           <!-- Locate Us -->
-          <div class="col-lg-3 col-md-6">
+          <div class="col-lg-4 col-md-6">
             <h5 class="fw-bold">Locate Us</h5>
             <iframe src="https://maps.google.com/maps?q=Chennai&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="150" style="border:0;" allowfullscreen="">
             </iframe>
@@ -503,6 +500,18 @@
             items: 2
           }
         }
+      });
+    });
+  </script>
+  <script>
+    $(document).ready(function () {
+      $(".building-carousel").owlCarousel({
+        items: 1,
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 2000,
+        nav: true,
+        navText:false
       });
     });
   </script>
